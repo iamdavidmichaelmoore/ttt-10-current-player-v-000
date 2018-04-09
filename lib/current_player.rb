@@ -3,4 +3,12 @@ def turn_count(board)
     board.each do |plays|
       counter += 1
     end
+    counter
+end
+
+def current_player(board)
+  if turn_count(board) % 2
+    "X"
+  else
+    "O"
 end
